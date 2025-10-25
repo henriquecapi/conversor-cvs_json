@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://henriquecapi.github.io/conversor-cvs_json/",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
