@@ -1,0 +1,5 @@
+{
+  "name": "data-conversor-universal",
+  "description": "An elegant and efficient web application to upload files in JSON or CSV format and convert them to Parquet or Avro. Features include a drag-and-drop upload zone, data preview, and a modern user interface.",
+  "requestFramePermissions": []
+}
