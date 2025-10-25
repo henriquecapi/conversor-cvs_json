@@ -1,4 +1,3 @@
-# Deploy Vite (React) app to GitHub Pages
 name: Deploy to GitHub Pages (Vite)
 
 on:
@@ -29,14 +28,14 @@ jobs:
 
       - name: Install dependencies
         run: |
-          # prefer clean install in CI; fallback to npm install if ci fails (no lockfile)
           npm ci --prefer-offline --no-audit --progress=false || npm install
 
       - name: Build (Vite)
         run: npm run build
 
       - name: Upload artifact for GitHub Pages
-        uses: actions/upload-pages-artifact@v1
+        # Atualizado para uma versão que não depende do upload-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: ./dist
 
